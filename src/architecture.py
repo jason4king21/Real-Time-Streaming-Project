@@ -5,7 +5,7 @@ from diagrams.aws.analytics import KinesisDataFirehose
 from diagrams.aws.storage import S3
 from diagrams.generic.database import SQL  # Placeholder for Snowflake
 
-with Diagram("Real-Time Streaming Pipeline", show=False, filename="diagrams/architecture2", outformat="png"):
+with Diagram("Real-Time Streaming Pipeline", show=False, filename="diagrams/architecture", outformat="png"):
     api = APIGateway("API Gateway")
     lam = Lambda("Lambda Processor")
     firehose = KinesisDataFirehose("Firehose")
