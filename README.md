@@ -9,7 +9,7 @@ This project demonstrates a real-time streaming data pipeline using AWS S3, API 
 - **API Gateway** receives incoming JSON data from external sources.
 - **Lambda** processes and validates the data.
 - **Kinesis Firehose** buffers and delivers the data to an S3 bucket.
-- **Snowpipe** auto-ingests the data into Snowflake for querying.
+- **Snowpipe** auto-ingests the data into a Snowflake table for querying.
 
 ## Tech Stack
 - AWS Lambda
