@@ -1,3 +1,29 @@
 # lambda_iam_role.json
 
-Sample content for lambda_iam_role.json.
+#Assigned Permissions
+
+AmazonEC2ContainerRegistryFullAccess
+AmazonKinesisFullAccess
+AmazonS3FullAccess
+AWSLambda_FullAccess
+CloudWatchFullAccess
+CloudWatchLogsFullAccess
+SecretsManagerReadWrite
+
+# Trust Policy
+
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Principal": {
+                "Service": [
+                    "apigateway.amazonaws.com",
+                    "lambda.amazonaws.com"
+                ]
+            },
+            "Action": "sts:AssumeRole"
+        }
+    ]
+}
