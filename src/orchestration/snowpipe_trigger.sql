@@ -1,3 +1,5 @@
 # snowpipe_trigger.sql
-
-Sample content for snowpipe_trigger.sql.
+CREATE OR REPLACE PIPE MYDB.PUBLIC.MYPIPE AUTO_INGEST = TRUE AS
+COPY INTO MYDB.PUBLIC.MYTABLE
+FROM @MYDB.PUBLIC.S3_STAGE
+FILE_FORMAT = (TYPE = 'JSON');
