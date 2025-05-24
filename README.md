@@ -33,12 +33,24 @@ This project showcases a real-time data ingestion pipeline using **AWS** and **S
 - Snowflake + Snowpipe
 
 ## 📂 Repository Structure
-/diagrams/ → Flow Diagrams
-/lambda/ → Lambda function source code
-/snowflake/ → Snowflake schema, stage, and pipe scripts
-/iam/ → AWS IAM roles
-/tests/ → Sample JSON data for validation
-README.md → This documentation file
+```
+Real-Time-Streaming-Project/
+│
+├── README.md                  → Project overview, setup instructions, and architecture details
+├── diagrams/
+│   └── architecture.png       → Visual diagram of the AWS + Snowflake pipeline
+│   └── Diagram Generator/
+│       └── architecture.py    → Python code to create the diagram
+├── iam/
+│   └── lambda_iam_role.json   → IAM role definition for AWS lambda permissions
+├── lambda/
+│   ├── api_gateway_lambda_handler.py     → Python code for AWS Lambda to process incoming API events
+├── snowflake/
+│   ├── snowpipe_trigger.sql     → SQL script to configure Snowpipe for auto-ingestion
+├── tests/
+│   └── sample.json            → Sample JSON file used to test the API and Lambda function
+└── .gitignore                 → Specifies untracked files and directories to ignore in Git
+```
 
 ---
 
