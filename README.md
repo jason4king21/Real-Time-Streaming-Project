@@ -63,6 +63,7 @@ Real-Time-Streaming-Project/
 ---
 
 ## 🏷️ Tags & Topics
-
+```
 Use these hashtags when sharing the project:
 #DataEngineering #AWS #Snowflake #RealTimeData #StreamingData #Serverless #ETL #DataPipeline #Kinesis #CloudComputing #Lambda
+```
