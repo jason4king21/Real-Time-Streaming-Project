@@ -33,10 +33,24 @@ This project showcases a real-time data ingestion pipeline using **AWS** and **S
 - Snowflake + Snowpipe
 
 ## 📂 Repository Structure
-/diagrams/ → Flow Diagrams
-/lambda/ → Lambda function source code
-/snowflake/ → Snowflake schema, stage, and pipe scripts
-/iam/ → AWS IAM roles
-/tests/ → Sample JSON data for validation
-README.md → This documentation file
+- /diagrams/ → Flow Diagrams
+- /lambda/ → Lambda function source code
+- /snowflake/ → Snowflake schema, stage, and pipe scripts
+- /iam/ → AWS IAM roles
+- /tests/ → Sample JSON data for validation
+- README.md → This documentation file
 
+---
+
+## ✅ Highlights
+
+- Serverless and scalable design
+- Near real-time data visibility
+- Minimal maintenance using managed services
+
+---
+
+## 🏷️ Tags & Topics
+
+Use these hashtags when sharing the project:
+#DataEngineering #AWS #Snowflake #RealTimeData #StreamingData #Serverless #ETL #DataPipeline #Kinesis #CloudComputing #Lambda
